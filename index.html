@@ -2,11 +2,25 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- 0秒でリダイレクト -->
-  <meta http-equiv="refresh" content="0; url='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">
-  <title>Redirecting…</title>
+  <title>Wait a moment...</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 20%;
+      font-size: 2rem;
+    }
+  </style>
+  <script>
+    // 2秒後にリダイレクト
+    setTimeout(function() {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }, 2000);
+  </script>
 </head>
 <body>
-  Redirecting... If nothing happens, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click here</a>.
+  <!-- ここを書き換えれば好きなメッセージにできる -->
+  <p>読み込み中…</p>
+  <p>ちょっと待ってね！</p>
 </body>
 </html>
